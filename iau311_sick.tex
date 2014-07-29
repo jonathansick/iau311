@@ -1,5 +1,6 @@
 \documentclass{iau}
-\usepackage{graphicx,natbib}
+\usepackage{graphicx,natbib,url}
+\bibliographystyle{apj}
  
 \newcommand{\apj}{ApJ}           % Astrophysical Journal
 \newcommand{\apjl}{ApJ}           % Astrophysical Journal
@@ -13,7 +14,7 @@
 \newcommand{\aapr}{A\&A Rev.}
 \newcommand{\na}{New Astr.}
 
-\title{The Stellar Mass of M31 seen by the Andromeda Optical \& Infrared disk Survey}
+\title{The Stellar Mass of M31 seen by the Andromeda Optical \& Infrared Disk Survey}
 
 \author[Sick et al]{Jonathan Sick,$^1$  Stephane Courteau,$^1$ Jean-Charles Cuillandre,$^2$ Julianne Dalcanton,$^3$ Roelof de Jong,$^4$ Michael McDonald,$^5$ Dana Simard,$^1$ \and R. Brent Tully$^6$}
 
@@ -29,47 +30,80 @@ $^6$Institute for Astronomy, University of Hawaii, 2680 Woodlawn Drive, Honolulu
 \jname{Galaxy Masses as Constraints of Formation Models}
 \editors{M. Cappellari \& S. Courteau, eds.}
 
-\begin{document}
-
-\maketitle
-
-\begin{abstract}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel erat eget orci auctor vestibulum fermentum at nibh. Sed eget tempor velit, ac mattis tortor. Integer eget tincidunt dolor. Pellentesque et dui vitae arcu vehicula blandit quis scelerisque velit. Maecenas ultricies lacus ac nibh dapibus tincidunt. Aenean consequat faucibus magna, at malesuada arcu scelerisque vitae. Duis vulputate iaculis ornare. In hac habitasse platea dictumst. Suspendisse blandit magna sed elit tempor sollicitudin. Suspendisse auctor sodales tristique. Aenean suscipit sapien nec est tristique semper. Aliquam dictum risus vel nunc lacinia ultricies. Suspendisse ipsum turpis, rhoncus sit amet elit quis, lacinia ullamcorper augue.
-\keywords{galaxies: elliptical and lenticular, cD - galaxies: evolution - galaxies: formation}
-\end{abstract}
-
-\firstsection
-\section{Introduction}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel erat eget orci auctor vestibulum fermentum at nibh. Sed eget tempor velit, ac mattis tortor. Integer eget tincidunt dolor. Pellentesque et dui vitae arcu vehicula blandit quis scelerisque velit. Maecenas ultricies lacus ac nibh dapibus tincidunt. Aenean consequat faucibus magna, at malesuada arcu scelerisque vitae \citep{bruzual03}. Duis vulputate iaculis ornare. In hac habitasse platea dictumst. Suspendisse blandit magna sed elit tempor sollicitudin. Suspendisse auctor sodales tristique. Aenean suscipit sapien nec est tristique semper. Aliquam dictum risus vel nunc lacinia ultricies. Suspendisse ipsum turpis, rhoncus sit amet elit quis, lacinia ullamcorper augue.
-
-Maecenas rhoncus sollicitudin posuere. Proin varius, nunc in sodales hendrerit, sem justo pharetra quam, non elementum augue tellus sit amet justo. Sed ornare tempus eros ut ultricies. Duis non imperdiet purus. Praesent blandit ante eu lorem pretium malesuada. Vestibulum et ornare orci, et commodo tellus. Suspendisse ullamcorper nisi at dui pretium, at bibendum ligula consequat. Nunc lectus neque, ultricies eu arcu sed, facilisis scelerisque leo. Nullam ut sollicitudin sem. Maecenas a libero aliquet, pellentesque mauris non, lacinia nunc. Nam blandit, mi ut dapibus scelerisque, odio magna pretium lectus, in tristique ipsum neque id turpis. Vivamus libero ligula, rhoncus a tincidunt at, pulvinar et enim. Nullam ultrices fermentum purus eu convallis. Mauris sem nibh, facilisis a risus sit amet, porttitor eleifend velit. Vivamus sed mi dui.
-
-\section{Conclusions}
-
-Vivamus velit dolor, dapibus eu placerat in, ultricies vitae magna. Aliquam placerat eu justo ut dictum. Donec fermentum nisi eu erat ornare congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean mollis elit dui, vitae blandit nulla iaculis id. Proin vel mi erat. Curabitur tempor sodales mauris, sit amet semper est condimentum ut. Duis ullamcorper sapien odio, malesuada scelerisque massa placerat ac. In vitae urna ut quam luctus egestas. Nunc nec blandit mi, ac aliquet odio (Fig.~\ref{fig:fig1}).
-
-
+% Figure template
 % \begin{figure}
 % \centering
 % \includegraphics[width=0.5\columnwidth]{cappellari_fig1.eps} 
 % \caption{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel erat eget orci auctor vestibulum fermentum at nibh. Sed eget tempor velit, ac mattis tortor. Integer eget tincidunt dolor. Pellentesque et dui vitae arcu vehicula blandit quis scelerisque velit. Maecenas ultricies lacus ac nibh dapibus tincidunt. Aenean consequat faucibus magna, at malesuada arcu scelerisque vitae.}\label{fig:fig1}
 % \end{figure}
 
-Cras erat enim, bibendum nec sagittis a, tempor quis enim. Aenean a condimentum nibh, ut rutrum metus. Nam sit amet ante convallis ante mattis placerat. Mauris tempus risus libero. Duis in blandit dolor. Morbi et elementum libero, quis porta mauris. Quisque a nibh nunc. Praesent cursus interdum felis vel vulputate. Quisque lorem libero, rutrum id semper ac, condimentum vitae neque. Donec sollicitudin vestibulum risus, id molestie neque semper ut. Sed vehicula leo sed eros lobortis, sed fringilla ligula iaculis.
+\begin{document}
 
-In hac habitasse platea dictumst. Donec dictum accumsan orci, eget ultrices tellus volutpat a. Quisque venenatis suscipit varius. Sed aliquam mollis lorem, sed gravida lorem egestas et. Nam elementum dui risus, nec sagittis eros ultrices in. Fusce blandit, leo at tristique faucibus, arcu tellus ultrices arcu, ut bibendum velit nulla sit amet dui. Maecenas blandit nibh quis sem lobortis luctus. Nam condimentum ullamcorper consequat. Pellentesque volutpat justo tellus, sed lacinia velit laoreet ut. Suspendisse congue sed arcu sed auctor. Donec ut lorem non quam rutrum rutrum. Vestibulum ipsum urna, auctor a semper in, ultricies luctus orci. Nulla sed blandit dolor. Donec gravida eget nisl quis condimentum. In mattis nunc non euismod sodales.
+\maketitle
+
+\begin{abstract}
+
+\keywords{galaxies: elliptical and lenticular, cD - galaxies: evolution - galaxies: formation}
+\end{abstract}
+
+\firstsection
+\section{Introduction}
+
+\section{M31 Surface Brightness Calibration}
+
+
+\section{SED Stellar Mass Modelling}
+
+From the calibrated surface brightness profiles, we model the SED at each radial bin to estimate the stellar population, and hence the stellar mass-to-light ratio, $M/L_i^*$.
+Our modelling engine is the Flexible Stellar Population Synthesis (FSPS) software\footnote{\url{http://people.ucsc.edu/~conroy/FSPS.html}} \citep{Conroy:2009,Conroy:2010}.
+We chose FSPS both because it is well-calibrated and known to have a `lighter' AGB contribution than older SP models \citep[e.g.,][]{Bruzual:2003} and also because it's application programming interface allows deep customization of the computed stellar populations.
+One author (J.S.) contributes to the maintenance of a Python-language wrapper for FSPS.\footnote{\url{http://dan.iel.fm/python-fsps}}.
+
+We use a Bayesian method to model each SED extracted along the northern major axis of the M31 disk.
+Unlike some authors at this Symposium who marginalize over libraries of pre-computed stellar populations, we use a Markov Chain Monte Carlo approach to explore the stellar population distributions of each SED.
+This MCMC is nearly trivial to implement with the emcee\footnote{\url{http://dan.iel.fm/emcee}} python package \citep{Foreman-Mackey:2010} that uses an affine-invariant sampler \cite{Goodman:2009} to automatically tune the step sizes through parameter space (a detail which otherwise plagues the simpler Metropolis-Hastings sampler).
+
+Given its flexible nature, we briefly explored which stellar population and dust parameterizations minimized along with which ensembles of bandpasses produced the most robust stellar population estimates.
+Briefly, we found that a simple `$\tau$' model, involving constant plus exponentially declining star formation rate components minimized residuals compared to more sophisticated `delayed $\tau$' and late burst models.
+Of the dust attenuation treatments, the default power-law attenuation law with separate components for young and older stellar populations also minimized residuals compared to Milky Way or starburst attenuation models.
+
+Perhaps most interesting was the realization that SED residuals are minimized by fitting the entire $ugriJK_s$ SED.
+This runs contrary to previous advice from \cite{Taylor:2011} and \cite{Zibetti:2009} who advocated ignoring NIR bands in mass estimation due to uncertain AGB treatments in the previous generation of stellar population synthesis models \citep[e.g.][]{Bruzual:2003,Maraston:2005}.
+Besides the near-infrared, the $u$-band is also crucial: the $griJK_s$-fit SED had has little predictive power over the $u$-band as the optical fit had over the NIR.
+This result should encourage SED modellers to incorporate as many bandpasses as possible, including UV and IR, to obtain the best constraints on stellar populations and masses.
+
+Armed with our favoured stellar population parameterization, we modelled SEDs extracted from a logarithmically-sized wedge \citep[e.g.][their Fig TODO]{Courteau:2011} to produce stellar population profiles (shown in Fig TODO).
+Our posterior profiles, show the basic features of a radially declining metallicity gradient and inside-out disk formation.
+More tightly constrained profiles could be obtained through both informative priors and modelling SEDs resolved in the 2D plane.
+
+Perhaps most surprising, though, is that the $ugri$-fit and $ugriJK_s$-fit SEDs produce statistically identical stellar population profiles, with the only exception being a slightly tighter posterior credible region from the full-SED fits
+Although the consistency of optical and optical-NIR SED fits is reassuring from the perspective of near-infrared calibrations, it is also disappointing that the NIR data has not produced a remarkably improved posterior stellar population estimate.
+Certainly this result is anecdotal, and could change with different underlying stellar populations and dust distributions.
+
+What is clear, though, is that poorly sampled SEDs can bias results.
+Fitting only the $gi$ SED (that is, using an input information equivalent to those using colour-M/L look-up-tables) clearly biases the posterior stellar population distribution, with significantly lower dust opacities and lower mass-to-light ratios. 
+By comparison, we have also plotted mass-to-light ratios predicted by three colour-M/L fits \citep{Zibetti:2009,Taylor:2011,Into:2013}.
+These fits systematically vary by 0.3~dex, far larger than the 0.1~dex of internal systematic uncertainty typically claimed by $g-i$ -- $M/L$ fits. 
+Compared to our full SED fits, modelling of the $gi$ SED is less biased than these other M/L fits, which are based on other stellar population synthesis models.
+This serves as reminder that stellar mass estimates remain dominated by prior assumptions such as choices of IMF, dust, and details of AGB treatments, among other concerns.
+
+Given this discussion, we estimate a stellar mass of the M31 disk, within $30$~kpc, as $M_{ugri}^{*} = 10.3^{+2.3}_{-1.7}~\mathrm{M}_\odot$.
+This result is consistent with the stellar bulge and disk masses quoted by \cite{Tamm:2012} (10.1~$\mathrm{M}_\odot$).
+
+\section{Conclusions}
+
 
 \section*{Acknowledgements}
 
-\noindent
-I acknowledge support from NASA.
+\noindent TODO
 
-\begin{thebibliography}{99}
+% \begin{thebibliography}{99}
 
-\bibitem[{{Bruzual} \& {Charlot}(2003)}]{bruzual03}
-{Bruzual} G., {Charlot} S., 2003, \mnras, 344, 1000
+% \bibitem[{{Bruzual} \& {Charlot}(2003)}]{bruzual03}
+% {Bruzual} G., {Charlot} S., 2003, \mnras, 344, 1000
 
-\end{thebibliography}
+% \end{thebibliography}
+
+\bibliography{master}
 
 \end{document}
