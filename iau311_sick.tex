@@ -7,6 +7,7 @@
 \newcommand{\mnras}{MNRAS}       % Monthly Notices of the RAS
 \newcommand{\nat}{Nature}
 \newcommand{\aap}{A\&A}
+\newcommand{\aaps}{A\&AS}
 \newcommand{\araa}{ARA\&A}
 \newcommand{\aj}{AJ}
 \newcommand{\pasp}{PASP}
@@ -56,6 +57,21 @@ These models address the covariance between baryons and dark matter parameters a
 
 \section{M31 Surface Brightness Calibration}
 
+Background subtraction is the most significant systematic uncertainty in the ANDROID's map of M31, and dramatically affects our ability probe the stellar populations of M31's outer disk.
+This is particularly accute in the our NIR maps where skyglow is 3-dex brighter than the disk, while also have strong spatial and temporal variations.
+In \cite{Sick:2014} we described the ANDROIDS/WIRCam sky-target nodding and background subtraction schemes.
+In summary, we found that the NIR background cannot be known to better than 2\% given the scale of sky-target nods required for M31.
+We can overcome this uncertainty by asserting that each overlapping pair of images in our mosaics should have consistent surface brightness and proceed to solve for sky offsets for each frame that formally minimize these surface brightness differences.
+Such sky offsets are on the order of 1\% of the NIR brightness.
+While the mosaics are smooth up the level of residual background \emph{shape} uncertainties, the zeropoint normalization of NIR sky offsets is significant---up to 0.16\% of the sky level.
+In optical bands, the sky background is both more stable and far less bright, though we still employ sky-target nodding with the Elixir-LSB method for CFHT/MegaCam to build a real-time map of sky and scattered light backgrounds over one-hour sliding windows.
+With Elixir-LSB we easily identify low surface brightness features in M31's outer disk, such as the Norther Spur, at levels below $\mu_g~26$~mag~arcsec$^{-2}$.
+
+The aforementioned sky offset zeropoint uncertainty requires that are profiles, through particularly at NIR, be finely calibrated against external datasets.
+Resolved stellar catalogs transfomed into surface brightness maps, such as our own WIRCam star catalog, but even Panchromatic Hubble Andromeda Treasury (PHAT) provide a useful dataset up to the limit of completeness corrections.
+Our WIRCam star catalog profile, in particular, allows us to correct and extend our NIR SB profiles beyond $R_\mathrm{maj}=40$~kpc (though our SED measurements shown here are resicted to just the estent our of pixel maps).
+Extremely wide-field imaging is also useful since background can be sampled simultaneously with the disk light.
+We are currently using Dragonfly (CITE) to image M31 and replace the wide-field Schmidt telescope plates of \cite{Walterbos:1987}.
 
 \section{SED Stellar Mass Modelling}
 
