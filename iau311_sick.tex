@@ -44,11 +44,15 @@ $^6$Institute for Astronomy, University of Hawaii, 2680 Woodlawn Drive, Honolulu
 
 \begin{abstract}
 Our proximity and external vantage point make M31 an ideal testbed for understanding the structure of spiral galaxies.
-Our Andromeda Optical and Infrared Disk Survey (ANDROIDS) has now mapped M31's bulge and disk out to R=40 kpc in ugriJK bands with CFHT.
-Our photometry uses careful monitoring of the sky background to yield exquisite, faint surface brightness maps (Sick etal 2014).
-These data, combined with various space-mission maps (HST, Herschel, Spitzer) and Bayesian modelling of the spectral energy distributions, yield the most detailed stellar mass map of M31 to date.
-Our parallel study of M31's velocity field enables the construction of a detailed mass model which examines the presence of non-circular motions and takes advantage of new dark matter halo structure constraints (Dutton \& Maccio 2014).
-These models address the covariance between baryons and dark matter parameters and whether structural decompositions like this one yield dynamically stable configurations.
+The Andromeda Optical and Infrared Disk Survey (ANDROIDS) has now mapped M31's bulge and disk out to R=40 kpc in ugriJK bands with CFHT using a careful sky calibration programme.
+Here we present Bayesian modelling of the optical-infrared spectral energy distribution to yield profiles of M31's stellar populations and mass along the major axis.
+This analysis provides evidence for inside-out disk formation and a declining metallicity gradient.
+M31's $i$-band mass-to-light ratio ($M/L_i^*$) decreases from 0.5~dex in the bulge to $\sim 0.2$~dex at 40~kpc.
+The best-constrained models are made against the full $ugriJK_s$ SED, and are also consistent with optical-only SED fits.
+Thus NIR data can be successfully modelled with modern stellar population synthesis, though NIR data do not appear to provide significant extra constraints in this application.
+Fits to the $gi$-SED alone yield $M/L_i^*$ that are systematically lower by 0.1~dex.
+Relations of $M/L_i$ via $g-i$ colour found in the literature systematically differ by 0.3~dex, reminding us of the importance of stellar population priors and modelization in estimating accurate stellar masses.
+We advocate a stellar mass of $M_*(30~\mathrm{kpc})=10.3^{+2.3}_{-1.7}~\mathrm{M}_\odot$.
 \keywords{galaxies: elliptical and lenticular, cD - galaxies: evolution - galaxies: formation}
 \end{abstract}
 
@@ -79,6 +83,18 @@ We are currently using Dragonfly (CITE) to image M31 and replace the wide-field 
 
 \section{SED Stellar Mass Modelling}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{pop_profile} 
+\caption{Posterior stellar population profiles.}\label{fig:pop_profile}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{pop_profile} 
+\caption{Posterior stellar $M/L_i^*$ (left) and mass (right) profiles.}\label{fig:mass_profile}
+\end{figure}
+
 From the calibrated surface brightness profiles, we model the SED at each radial bin to estimate the stellar population, and hence the stellar mass-to-light ratio, $M/L_i^*$.
 Our modelling engine is the Flexible Stellar Population Synthesis (FSPS) software\footnote{\url{http://people.ucsc.edu/~conroy/FSPS.html}} \citep{Conroy:2009,Conroy:2010}.
 We chose FSPS both because it is well-calibrated and known to have a `lighter' AGB contribution than older SP models \citep[e.g.,][]{Bruzual:2003} and also because it's application programming interface allows deep customization of the computed stellar populations.
@@ -97,7 +113,7 @@ This runs contrary to previous advice from \cite{Taylor:2011} and \cite{Zibetti:
 Besides the near-infrared, the $u$-band is also crucial: the $griJK_s$-fit SED had has little predictive power over the $u$-band as the optical fit had over the NIR.
 This result should encourage SED modellers to incorporate as many bandpasses as possible, including UV and IR, to obtain the best constraints on stellar populations and masses.
 
-Armed with our favoured stellar population parameterization, we modelled SEDs extracted from a logarithmically-sized wedge \citep[e.g.][their Fig TODO]{Courteau:2011} to produce stellar population profiles (shown in Fig TODO).
+Armed with our favoured stellar population parameterization, we modelled SEDs extracted from a logarithmically-sized wedge \citep[e.g.][their Fig. 2]{Courteau:2011} to produce stellar population profiles (shown in Fig. \ref{fig:pop_profile}).
 Our posterior profiles, show the basic features of a radially declining metallicity gradient and inside-out disk formation.
 More tightly constrained profiles could be obtained through both informative priors and modelling SEDs resolved in the 2D plane.
 
