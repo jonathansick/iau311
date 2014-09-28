@@ -59,25 +59,25 @@ We advocate a stellar mass of $M_*(30~\mathrm{kpc})=10.3^{+2.3}_{-1.7}~\mathrm{M
 \firstsection
 \section{Introduction}
 
-ANDROIDS is a programme with MegaCam and WIRCam cameras on the Canada-France-Hawaii Telescope (CFHT) that has homogeneously mapped M31's bulge and disk within $R=40$~kpc with $ugriJK_s$ bands to enable global studies of M31's structure and stellar populations using both resolved stars and the integrated spectral energy distribution (SED).
-In this contribution, we use ANDROIDS to estimate the stellar mass profile of the M31 disk with Bayesian modelling of the optical  to near-IR (NIR) SED.
-This approach is more rigorous than the colour-$M/L^*$ prescriptions \citep[e.g.][]{Zibetti:2009,Taylor:2011,Into:2013} often used in pixel-by-pixel stellar mass estimation studies that use only a $g-i$ colour marginalize over all likely star formation histories.
-By studying M31 in detail, an overall goal of ANDROIDS is to explore systematic uncertainties in studies of more distant and poorly systems.
+ANDROIDS is a programme with the MegaCam and WIRCam cameras on the Canada-France-Hawaii Telescope (CFHT) that has homogeneously mapped M31's bulge and disk within $R=40$~kpc with $ugriJK_s$ bands to enable global studies of M31's structure and stellar populations using both resolved stars and integrated spectral energy distributions (SEDs).
+In this contribution, we use ANDROIDS to estimate the stellar mass profile of the M31 disk with Bayesian modelling of the optical to near-IR (NIR) SED.
+This approach is more rigorous than the colour-$M/L^*$ prescriptions \citep[e.g.][]{Zibetti:2009,Taylor:2011,Into:2013} often employed by pixel-by-pixel stellar mass estimation studies that use only a $g-i$ colour and marginalize over all likely star formation histories.
+By studying M31 in detail, an overall goal of ANDROIDS is to explore systematic uncertainties in studies of more distant and poorly resolved systems.
 
 \section{M31 Surface Brightness Calibration}
 
 Background subtraction is the most significant challenge for observational studies of M31's structure since we cannot observe the M31 disk and blank sky in the same fields of view.
 This is particularly acute in our NIR maps where skyglow is 3-dex brighter than the disk, while also have strong spatial and temporal variations.
 In \cite{Sick:2014} we described our ANDROIDS/WIRCam sky-target nodding and background subtraction schemes and find that the NIR background cannot be known to better than 2\% given the scale of sky-target nods required for M31.
-We can overcome this uncertainty by solve for sky offsets for each frame that formally minimize these surface brightness differences between overlapping pairs of images.
+We can overcome this uncertainty by solving for sky offsets that formally minimize surface brightness differences between overlapping pairs of images.
 Such sky offsets are $\sim1$\% of the NIR brightness, but systematically uncertain up to a zeropoint normalization of 0.16\% of the sky level.
 In optical bands the sky background is both more stable and far less bright, though we still employ sky-target nodding with the Elixir-LSB method for CFHT/MegaCam to build a real-time map of sky and scattered light backgrounds over one-hour sliding windows.
 With Elixir-LSB we easily identify low surface brightness features in M31's outer disk, such as the Norther Spur, at levels below $\mu_g\sim26$~mag~arcsec$^{-2}$.
 
 The aforementioned sky offset zeropoint uncertainty requires that our surface brightness profiles be finely calibrated against external datasets.
-Resolved stellar catalogs transformed into surface brightness maps, such as our own WIRCam star catalog, but even Panchromatic Hubble Andromeda Treasury (PHAT) provide a useful dataset up to the limit of completeness corrections.
-Extremely wide-field imaging is also useful since background can be sampled simultaneously with the disk light.
-We are currently using Dragonfly (CITE) to image M31 and replace the wide-field Schmidt telescope plates of \cite{Walterbos:1987}.
+Resolved stellar catalogs transformed into surface brightness maps, such as our own WIRCam star catalog, but even Panchromatic Hubble Andromeda Treasury \citep[PHAT;][]{Dalcanton:2012} provide a useful dataset up to the limit of completeness corrections.
+Extremely wide-field imaging is also useful since the background can be sampled simultaneously with the disk light.
+We are currently using Dragonfly \citep{Abraham:2014} to image M31 and replace the wide-field Schmidt telescope plates of \cite{Walterbos:1987}.
 
 \section{SED Stellar Mass Modelling}
 
@@ -85,7 +85,7 @@ We are currently using Dragonfly (CITE) to image M31 and replace the wide-field 
 \centering
 \includegraphics[width=0.7\columnwidth]{pop_profile} 
 \caption{Posterior stellar population profiles for different bandpass sets: $ugriJK_s$ (blue), $ugri$ (green), $gi$ (red).
-An declining metallicity gradient and inside-out disk formation (seen by an increase in the e-folding time ($\log \tau$) of the exponentially declining star formation history model) are clearly evident.}
+A declining metallicity gradient and inside-out disk formation (seen by an increase in the e-folding time ($\log \tau$) of the exponentially declining star formation history model) are clearly evident.}
 \label{fig:pop_profile}
 \end{figure}
 
@@ -102,7 +102,6 @@ From the calibrated surface brightness profiles, we model the SED at each radial
 Our modelling engine is the Flexible Stellar Population Synthesis (FSPS) software \citep{Conroy:2009,Conroy:2010}.
 We chose FSPS both because it is well-calibrated and known to have a `lighter' AGB contribution than older SP models \citep[e.g.,][]{Bruzual:2003} and also because it's application programming interface allows deep customization of the computed stellar populations.
 One author (J.S.) contributes to the maintenance of a Python-language wrapper for FSPS.\footnote{\url{http://dan.iel.fm/python-fsps}}
-
 We use a Markov Chain Monte Carlo approach to modelling SEDs extracted along the northern major axis of the M31 disk implemented with the \texttt{emcee} python package \citep{Foreman-Mackey:2013}.
 We tested different star formation history parameterizations and found that a simple `$\tau$' model, involving constant plus exponentially declining star formation rate components minimized residuals compared to more sophisticated `delayed $\tau$' and late burst models.
 Of the dust attenuation treatments, the default power-law attenuation law with separate components for young and older stellar populations also minimized residuals compared to Milky Way or starburst attenuation models.
@@ -125,16 +124,16 @@ Compared to our full SED fits, modelling of the $gi$ SED is less biased than the
 This serves as reminder that stellar mass estimates remain dominated by prior assumptions such as choices of IMF, dust, and details of AGB treatments, among other concerns.
 
 Given this discussion, we estimate a stellar mass of the M31 disk, within $30$~kpc, as $M_{ugri}^{*} = 10.3^{+2.3}_{-1.7}~\mathrm{M}_\odot$.
-This result is consistent with the stellar bulge and disk masses quoted by \cite{Tamm:2012} (10.1~$\mathrm{M}_\odot$).
+This result is consistent with the stellar bulge and disk masses quoted by \cite{Tamm:2012} ($10.1\times10^{10}~\mathrm{M}_\odot$).
 
 \section{Discussion}
 
 We have used $ugriJK_s$ SEDs to map the stellar mass of M31's disk.
 We are currently using these stellar mass maps in concert with dynamical tracers of gas and stars to construct a mass model of M31's stellar, gas, and dark matter components.
-\cite{Tamm:2012} recently constructed a mass model of M31 using dynamical tracers along with SDSS and Spitzer 3.6~$\mu$m photometry.
-Their bulge models are ill-constrained due to a lack of dynamical tracers within 8~kpc.
-However, we use the DiskFit code (CITE) to correct for non-circular motions in HI kinematics in \cite{Saglia:2010} and {Chemin:2010} measurements that reach the centre of M31.
-The success of this mass model will be determined by the stability of a dynamical N-body realization with the GalactICS code (CITE).
+% \cite{Tamm:2012} recently constructed a mass model of M31 using dynamical tracers along with SDSS and Spitzer 3.6~$\mu$m photometry.
+% Their bulge models are ill-constrained due to a lack of dynamical tracers within 8~kpc.
+The DiskFit code \citep{Kuzio-de-Naray:2012} allows us to correct for non-circular motions in HI kinematical measurements of \cite{Saglia:2010} and \cite{Chemin:2009} that reach the centre of M31.
+The success of this mass model will be determined by the stability of a dynamical N-body realization.
 
 \section*{Acknowledgements}
 
