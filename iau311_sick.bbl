@@ -38,13 +38,6 @@
 \bibitem[{{Into} \& {Portinari}(2013)}]{Into:2013}
 {Into}, T., \& {Portinari}, L. 2013, ArXiv e-prints
 
-\bibitem[{{Kuzio de Naray} {et~al.}(2012){Kuzio de Naray}, {Arsenault},
-  {Spekkens}, {Sellwood}, {McDonald}, {Simon}, \&
-  {Teuben}}]{Kuzio-de-Naray:2012}
-{Kuzio de Naray}, R., {Arsenault}, C.~A., {Spekkens}, K., {et~al.} 2012,
-  {DiskFit: Modeling Asymmetries in Disk Galaxies}, astrophysics Source Code
-  Library
-
 \bibitem[{{Maraston}(2005)}]{Maraston:2005}
 {Maraston}, C. 2005, \mnras, 362, 799
 
@@ -55,6 +48,9 @@
 \bibitem[{{Sick} {et~al.}(2014){Sick}, {Courteau}, {Cuillandre}, {McDonald},
   {de Jong}, \& {Tully}}]{Sick:2014}
 {Sick}, J., {Courteau}, S., {Cuillandre}, J.-C., {et~al.} 2014, \aj, 147, 109
+
+\bibitem[{{Spekkens} \& {Sellwood}(2007)}]{Spekkens:2007}
+{Spekkens}, K., \& {Sellwood}, J.~A. 2007, \apj, 664, 204
 
 \bibitem[{{Tamm} {et~al.}(2012){Tamm}, {Tempel}, {Tenjes}, {Tihhonova}, \&
   {Tuvikene}}]{Tamm:2012}
