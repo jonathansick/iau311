@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{19}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Abraham} \& {van Dokkum}(2014)}]{Abraham:2014}
@@ -21,6 +21,12 @@
   {Guhathakurta}, {Gilbert}, {Zhu}, {Beaton}, \& {Majewski}}]{Courteau:2011}
 {Courteau}, S., {Widrow}, L.~M., {McDonald}, M., {et~al.} 2011, \apj, 739, 20
 
+\bibitem[{{Courteau} {et~al.}(2014){Courteau}, {Cappellari}, {de Jong},
+  {Dutton}, {Emsellem}, {Hoekstra}, {Koopmans}, {Mamon}, {Maraston}, {Treu}, \&
+  {Widrow}}]{Courteau:2013}
+{Courteau}, S., {Cappellari}, M., {de Jong}, R.~S., {et~al.} 2014, Rev. Mod.
+  Phys., 86, 47
+
 \bibitem[{{Dalcanton} {et~al.}(2012){Dalcanton}, {Williams}, {Lang}, {Lauer},
   {Kalirai}, {Seth}, {Dolphin}, {Rosenfield}, {Weisz}, {Bell}, {Bianchi},
   {Boyer}, {Caldwell}, {Dong}, {Dorman}, {Gilbert}, {Girardi}, {Gogarten},
@@ -36,7 +42,7 @@
   125, 306
 
 \bibitem[{{Into} \& {Portinari}(2013)}]{Into:2013}
-{Into}, T., \& {Portinari}, L. 2013, ArXiv e-prints
+{Into}, T., \& {Portinari}, L. 2013, \mnras, 430, 2715
 
 \bibitem[{{Maraston}(2005)}]{Maraston:2005}
 {Maraston}, C. 2005, \mnras, 362, 799
@@ -44,6 +50,10 @@
 \bibitem[{{Saglia} {et~al.}(2010){Saglia}, {Fabricius}, {Bender}, {Montalto},
   {Lee}, {Riffeser}, {Seitz}, {Morganti}, {Gerhard}, \& {Hopp}}]{Saglia:2010}
 {Saglia}, R.~P., {Fabricius}, M., {Bender}, R., {et~al.} 2010, \aap, 509, A61
+
+\bibitem[{{Sick} {et~al.}(2013){Sick}, {Courteau}, \&
+  {Cuillandre}}]{Sick:2013a}
+{Sick}, J., {Courteau}, S., \& {Cuillandre}, J.-C. 2013, 1310.4832
 
 \bibitem[{{Sick} {et~al.}(2014){Sick}, {Courteau}, {Cuillandre}, {McDonald},
   {de Jong}, \& {Tully}}]{Sick:2014}
