@@ -5,5 +5,5 @@
         "pdf",
         "eps"
     ],
-    "master": "./iau311_sick.tex"
+    "master": "./sick.tex"
 }
